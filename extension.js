@@ -55,14 +55,14 @@
     //Change the bots default settings and make sure they are loaded on launch
 
     localStorage.setItem("basicBotsettings", JSON.stringify({
-        botName: "basicBot",
-        language: "english",
+        botName: "TechnoBot",
+        language: "french",
         startupCap: 1, // 1-200
-        startupVolume: 0, // 0-100
-        startupEmoji: false, // true or false
+        startupVolume: 100, // 0-100
+        startupEmoji: true, // true or false
         cmdDeletion: true,
-        chatLink: "https://rawgit.com/Yemasthui/basicBot/master/lang/en.json",
-        maximumAfk: 120,
+        chatLink: "https://rawgit.com/Yemasthui/basicBot/master/lang/fr.json",
+        maximumAfk: 500,
         afkRemoval: true,
         maximumDc: 60,
         bouncerPlus: true,
@@ -72,7 +72,7 @@
         maximumLocktime: 10,
         cycleGuard: true,
         maximumCycletime: 10,
-        voteSkip: false,
+        voteSkip: true,
         voteSkipLimit: 10,
         timeGuard: true,
         maximumSongLength: 10,
@@ -81,9 +81,9 @@
         usercommandsEnabled: true,
         lockskipPosition: 3,
         lockskipReasons: [
-            ["theme", "This song does not fit the room theme. "],
-            ["op", "This song is on the OP list. "],
-            ["history", "This song is in the history. "],
+            ["theme", "Cette musique ne respecte pas le theme de la salle. "],
+            ["op", "Cette musique est dans la liste OP "],
+            ["history", "Cette musique est dans l'historique. "],
             ["mix", "You played a mix, which is against the rules. "],
             ["sound", "The song you played had bad sound quality or no sound. "],
             ["nsfw", "The song you contained was NSFW (image or sound). "],
@@ -93,7 +93,7 @@
         afkRankCheck: "ambassador",
         motdEnabled: false,
         motdInterval: 5,
-        motd: "Temporary Message of the Day",
+        motd: "Message du jour",
         filterChat: true,
         etaRestriction: false,
         welcome: true,
